@@ -1,0 +1,12 @@
+bandit 0 : ssh και μετα cat readme 
+bandit 1 : ls και μετα cat ./- 
+bandit 2 : ls και μετα cat spaces\ in\ this\ filename
+bandit 3 : cd inhere και μετα cat .hidden 
+bandit 4 : cd inhere και μετα find . -type f | xargs file > man xargs > cat ./-file07
+bandit 5 : cd inhere και μετα find . -type f -size 1033c ! -executable  >  cat./maybehere/.file2
+bandit 6 : find / -type f -user bandit7 -group bandit6 -size 33c  > cat /var/lib/dpkg/info/bandit7.password 
+bandit 7 : ls > cat data.txt > strings data.txt | grep "millionth" 
+bandit 8 : sort data.txt 
+bandit 9 : strings data.txt | grep "=="
+bandit 10 : cat data.txt >  base64 -d data.txt
+bandit 11 : cyberchef
